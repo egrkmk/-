@@ -1,0 +1,116 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        //Console.WriteLine("Первое задание:");
+        //Console.Write("Введите номер Сережи в строю:");
+        //int N = Convert.ToInt32(Console.ReadLine());
+        //if ((N % 2) == 0)
+        //{
+        //    Console.WriteLine("Сережа второй при расчете");
+        //}
+        //else
+        //{
+        //    Console.WriteLine("Сережа первый при расчете");
+        //}
+        //Console.WriteLine("Второе задание:");
+        //Console.Write("Введите длину первой стороны треугольника:");
+        //double side1 = Convert.ToDouble(Console.ReadLine());
+        //Console.Write("Введите длину второй стороны треугольника:");
+        //double side2 = Convert.ToDouble(Console.ReadLine());
+        //Console.Write("Введите длину третьей стороны треугольника:");
+        //double side3 = Convert.ToDouble(Console.ReadLine());
+        //if (((side1 + side2) > side3) & ((side1 + side3) > side2) & ((side2 + side3) > side1))
+        //{
+        //    if ((Math.Pow(side1, 2) + Math.Pow(side2, 2) == Math.Pow(side3, 2)) | (Math.Pow(side1, 2) + Math.Pow(side3, 2) == Math.Pow(side2, 2)) | (Math.Pow(side2, 2) + Math.Pow(side3, 2) == Math.Pow(side1, 2)))
+        //    {
+        //        Console.WriteLine("Треугольник прямоугольный");
+        //    }
+        //    else
+        //    {
+        //        double degrees_opposite_side1 = Convert.ToDouble(Math.Acos((Math.Pow(side2, 2) + Math.Pow(side3, 2) - Math.Pow(side1, 2)) / (2 * side2 * side3)) * (180 / Math.PI));
+        //        double degrees_opposite_side2 = Convert.ToDouble(Math.Acos((Math.Pow(side1, 2) + Math.Pow(side3, 2) - Math.Pow(side2, 2)) / (2 * side1 * side3)) * (180 / Math.PI));
+        //        double degrees_opposite_side3 = Convert.ToDouble(Math.Acos((Math.Pow(side1, 2) + Math.Pow(side2, 2) - Math.Pow(side3, 2)) / (2 * side1 * side2)) * (180 / Math.PI));
+        //        Console.WriteLine($"Угол напротив первой стороны: {degrees_opposite_side1:f2}");
+        //        Console.WriteLine($"Угол напротив второй стороны: {degrees_opposite_side2:f2}");
+        //        Console.WriteLine($"Угол напротив третьей стороны: {degrees_opposite_side3:f2}");
+        //    }
+        //}   
+        //else
+        //{
+        //    Console.WriteLine("Треугольника с такими сторонами не существует");
+        //}
+        //Console.WriteLine("Третье задание:");
+        //Console.Write("Введите номер Сергея в очереди:");
+        //int N = Convert.ToInt32(Console.ReadLine());
+        //int patients_before = N - 1;
+        //int max_amount_patients = ((17 - 9) * (60 / 20)) * 2 + 2;
+        //if (N > max_amount_patients)
+        //{
+        //    Console.WriteLine("Сергею не стоит стоять в очереди");
+        //}
+        //else
+        //{
+        //    int patiens_before_chet = patients_before / 2;
+        //    int hours = patiens_before_chet * 20 / 60;
+        //    int minutes = patiens_before_chet * 20 - hours * 60;
+        //    Console.WriteLine($"Сергею нужно ждать в очереди {hours}ч. и {minutes}мин.");
+        //}
+
+        //Console.WriteLine("Четвертое задание:");
+        //Console.WriteLine ("Выберите условия вклада и введите номер:\n 1. Вклад на 1 год под 7% годовых. \n 2. Вклад на 3 года под 8% годовых. \n 3. Вклад на 5 лет под 10% годовых.");
+        //int number = Convert.ToInt16(Console.ReadLine());
+        //Console.Write("Введите сумму вклада:");
+        //double summa = Convert.ToDouble(Console.ReadLine());
+        //if (number == 1)
+        //{
+        //    double profit = Convert.ToDouble(summa * 1.07 - summa);
+        //    Console.WriteLine($"Ваша прибыль составит {profit}");
+        //}
+        //else if (number == 2)
+        //{
+        //    double profit = Convert.ToDouble(summa * Math.Pow(1.08, 3) - summa);
+        //    Console.WriteLine($"Ваша прибыль составит {profit}");
+        //}
+        //else if (number == 3)
+        //{
+        //    double profit = Convert.ToDouble(summa * Math.Pow(1.1, 5) - summa);
+        //    Console.WriteLine($"Ваша прибыль составит {profit:f2} руб.");
+        //}
+
+        //Console.WriteLine("Пятое задание:");
+        //Console.Write("Введите скорость автомобиля:");
+        //double speed = Convert.ToDouble(Console.ReadLine());
+        //if (speed <= 90) 
+        //{
+        //    Console.WriteLine("Скорость автомобиля допустима на данном участке.");
+        //}
+        //else
+        //{
+        //    double speeding = Convert.ToDouble(speed - 90);
+        //    if (speeding>=20 & speeding < 40)
+        //    {
+        //        Console.WriteLine("Сумма штрафа - 500 рублей.");
+        //    }
+        //    else if (speeding >= 40 & speeding < 60)
+        //    {
+        //        Console.WriteLine("Сумма штрафа - 1500 рублей.");
+        //    }
+        //    else if (speeding >= 60 & speeding < 80)
+        //    {
+        //        Console.WriteLine("Штраф 2500 рублей или лишение прав на 4 месяца.");
+        //    }
+        //    else if (speeding >= 80)
+        //    {
+        //        Console.WriteLine("Штраф 5000 рублей или лишение прав на полгода.");
+        //    }
+        //}
+
+
+
+    }
+}
+
+
