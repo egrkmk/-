@@ -1,0 +1,111 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Первое задание:");
+
+        Console.WriteLine("Как вас зовут?");
+        string name = Console.ReadLine();
+        Console.WriteLine("Какой язык программирования Вы изучали ранее?");
+        string language = Console.ReadLine();
+        Console.WriteLine($"Я {name}, я уже знаю {language}!");
+
+        Console.WriteLine("Второе задание:");
+
+        Console.Write("Введите значение X: ");
+        double X = Convert.ToDouble(Console.ReadLine());
+        Console.Write("Введите значение Y: ");
+        double Y = Convert.ToDouble(Console.ReadLine());
+        double rad = Math.Atan2(Y, X);
+        double degrees = rad * (180 / Math.PI);
+        Console.WriteLine($"Угол наклона прямой {degrees:F3} градусов");
+
+        Console.WriteLine("Третье задание:");
+        //Для целых v и t:
+        int S = 163;
+        Console.Write("Введите скорость автомобиля:");
+        double v = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Введите через сколько часов:");
+        double t = Convert.ToInt32(Console.ReadLine());
+        double circle = Math.Floor((v * t) / S);
+        Console.WriteLine($"Автомобиль проедет {circle} полных кругов");
+        Console.WriteLine($"Автомобиль остановится на {(v * t) - circle * S} километре");
+        Для дробных v и t:
+        int S = 163;
+        Console.Write("Введите скорость автомобиля:");
+        double v = Convert.ToDouble(Console.ReadLine());
+        Console.Write("Введите через сколько часов:");
+        double t = Convert.ToDouble(Console.ReadLine());
+        double circle = Math.Floor((v * t) / S);
+        Console.WriteLine($"Автомобиль проедет {circle} полных кругов");
+        Console.WriteLine($"Автомобиль остановится на {(v * t) - circle * S:f2} километре");
+
+        Console.WriteLine("Четвертое задание:");
+        // Какое число? Для целых:
+        Console.Write("Введите первое число:");
+        int x1 = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Введите второе число:");
+        int x2 = Convert.ToInt32(Console.ReadLine());
+        Random ran = new Random();
+        if (x1 > x2)
+        {
+            Console.WriteLine($"Число : {ran.Next(x2, x1)}");
+        }
+        else if (x2 > x1)
+        {
+            Console.WriteLine($"Число : {ran.Next(x1, x2)}");
+        }
+        else
+        {
+            Console.WriteLine($"Число : {x1}");
+        }
+
+        // Для дробных:
+        Console.Write("Введите первое число:");
+        int y1 = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Введите второе число:");
+        int y2 = Convert.ToInt32(Console.ReadLine());
+        Random rnd = new Random();
+        if (y2 > y1)
+        {
+            double ans = rnd.NextDouble() * (y2 - y1) + y1;
+            Console.WriteLine($"Число : {ans}");
+        }
+        else if (y1 > y2)
+        {
+            double ans = rnd.NextDouble() * (y1 - y2) + y2;
+            Console.WriteLine($"Число : {ans}");
+        }
+        else
+        {
+            Console.WriteLine($"Число : {y1}");
+        }
+
+        Console.WriteLine("Пятое задание:");
+        Console.Write("Введите число a:");
+        double a = Convert.ToDouble(Console.ReadLine());
+        Console.Write("Введите число b:");
+        double b = Convert.ToDouble(Console.ReadLine());
+        Console.Write("Введите число c:");
+        double c = Convert.ToDouble(Console.ReadLine());
+        Console.Write("Введите число d:");
+        double d = Convert.ToDouble(Console.ReadLine());
+        double Z = (a / c) * (b / d) - ((a * b - c) / (c * d)) + Math.Sqrt(d);
+        Console.WriteLine($"Число Z: {Z:f3}");
+
+        Console.WriteLine("Шестое задание:");
+        Console.Write("Введите длину первой стороны треугольника:");
+        double side1 = Convert.ToDouble(Console.ReadLine());
+        Console.Write("Введите длину второй стороны треугольника:");
+        double side2 = Convert.ToDouble(Console.ReadLine());
+        Console.Write("Введите длину третьей стороны треугольника:");
+        double side3 = Convert.ToDouble(Console.ReadLine());
+        double p = (side1 + side2 + side3) / 2;
+        double area = Math.Sqrt(p * (p - side1) * (p - side2) * (p - side3));
+        Console.WriteLine($"Площадь треугольника: {area:f2}");
+
+    }
+
+}
