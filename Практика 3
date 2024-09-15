@@ -1,0 +1,203 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Лаба_3
+{
+    internal class Program
+    {
+        static void Main( )
+        {
+            //Random random = new Random();
+            //int target = random.Next(1, 11); 
+            //int userguess = 0; 
+            //int attempts = 0; 
+
+            //Console.WriteLine("Угадайте число от 1 до 10");
+
+            //while (userguess != target)
+            //{
+            //    Console.Write("Введите число: ");
+            //    userguess = int.Parse(Console.ReadLine());
+            //    attempts++; 
+
+            //    if (userguess < target)
+            //    {
+            //        Console.WriteLine("Загаданное число больше.");
+            //    }
+            //    else if (userguess > target)
+            //    {
+            //        Console.WriteLine("Загаданное число меньше.");
+            //    }
+            //}
+
+            //Console.WriteLine($"Поздравляю! Вы угадали число за {attempts} попыток.");
+
+            //Console.WriteLine("Второе задание:");
+            //Console.Write("Введите число N (N>10): ");
+            //int N = Convert.ToInt32(Console.ReadLine());
+
+            //if (N <= 10)
+            //{
+            //    Console.WriteLine("Ошибка: N должно быть больше 10.");
+            //    return;
+            //}
+
+            //int sumofnumbers = 0;             
+            //int sumofsquares = 0;    
+
+            //for (int i = 1; i <= N; i++)
+            //{
+            //    sumofnumbers += i; 
+            //    sumofsquares += i * i;
+
+            //    if (sumofsquares > 500)
+            //    {
+            //        Console.WriteLine("Сумма квадратов превысила 500. Цикл прерван.");
+            //        break;
+            //    }
+            //}
+
+            //Console.WriteLine($"Сумма чисел: {sumofnumbers}");
+            //Console.WriteLine($"Сумма квадратов чисел: {sumofsquares}");
+
+            //Console.WriteLine("Третье задание:");
+            //Console.WriteLine("Введите количество студентов:");
+            //int N = Convert.ToInt32(Console.ReadLine());
+            //int count3 = 0;
+            //int count4 = 0;
+            //int count5 = 0;
+            //int max = 0;
+            //int min = 999999;
+            //for (int i = 1; i <= N; i++)
+            //{
+            //    Console.Write("Введите количество подтягиваний студента:");
+            //    int count = Convert.ToInt32(Console.ReadLine());
+            //    max = Math.Max(max, count);
+            //    min = Math.Min(min, count); 
+            //    if (count >=12 && count < 14)
+            //    {
+            //        count3 += 1;
+            //    }
+            //    if (count >=14 && count < 16)
+            //    {
+            //        count4 += 1;
+            //    }
+            //    if (count >= 16)
+            //    {
+            //        count5 += 1;
+            //    }
+
+
+            //}
+            //Console.WriteLine($"{count3} студентов сдали зачет на 3");
+            //Console.WriteLine($"{count4} студентов сдали зачет на 4");
+            //Console.WriteLine($"{count5} студентов сдали зачет на 5");
+            //Console.WriteLine($"Минимальное количество подтягиваний:{min}");
+            //Console.WriteLine($"Максимальное количество подтягиваний:{max}");
+
+
+            //Console.WriteLine("Четвертое задание:");
+            //Console.Write("Введите значение A: ");
+            //double A = Convert.ToDouble(Console.ReadLine());
+            //Console.Write("Введите значение B: ");
+            //double B = Convert.ToDouble(Console.ReadLine());
+            //Console.Write("Введите значение C: ");
+            //double C = Convert.ToDouble(Console.ReadLine());
+            //Console.Write("Введите значение D: ");
+            //double D = Convert.ToDouble(Console.ReadLine());
+
+            //double positiveSum = 0;
+            //double totalSum = 0;
+            //int count = 0;
+
+            //for (int x = 1; x <= 10; x++)
+            //{
+            //    double y = A * Math.Sqrt(B * x +D) - C * x;
+
+            //    Console.WriteLine($"При x = {x}, y = {y:F2}");
+
+            //    if (y > 0)
+            //    {
+            //        positiveSum += y;
+            //    }
+
+            //    totalSum += y;
+            //    count++;
+            //}
+
+            //double averageY = totalSum / count;
+
+            //Console.WriteLine($"Сумма положительных значений y: {positiveSum:F2}");
+            //Console.WriteLine($"Среднее значение y: {averageY:F2}");
+
+
+            //Console.WriteLine("Пятое задание:");
+            //Console.Write("Введите количество элементов массива: ");
+            //int N = int.Parse(Console.ReadLine());
+
+            //int[] A = new int[N];
+
+            //Console.WriteLine("Введите элементы массива:");
+            //for (int i = 0; i < N; i++)
+            //{
+            //    Console.Write($"A[{i}] = ");
+            //    A[i] = int.Parse(Console.ReadLine());
+            //}
+
+            //int maxElement = A[0];
+            //int maxIndex = 0;
+            //for (int i = 1; i < N; i++)
+            //{
+            //    if (A[i] > maxElement)
+            //    {
+            //        maxElement = A[i];
+            //        maxIndex = i;
+            //    }
+            //}
+
+            //Console.WriteLine("\nИсходный массив:");
+            //foreach (int num in A)
+            //{
+            //    Console.Write(num + " ");
+            //}
+
+            //if (maxIndex != N - 1)
+            //{
+            //    int temp = A[N - 1];
+            //    A[N - 1] = maxElement;
+            //    A[maxIndex] = temp;
+            //}
+
+            //Console.WriteLine("\nМассив после перемещения максимального элемента на последнее место:");
+            //foreach (int num in A)
+            //{
+            //    Console.Write(num + " ");
+            //}
+
+
+            Console.WriteLine("Шестое задание:");
+            Console.Write("Введите радиус R основной окружности: ");
+            double R = double.Parse(Console.ReadLine());
+            int intersectingCount = 0;
+            Console.WriteLine("Введите координаты (x, y) для 12 окружностей:");
+            for (int i = 0; i < 12; i++)
+            {
+                Console.Write($"Координаты окружности {i + 1}: ");
+                Console.Write("x = ");
+                double x = double.Parse(Console.ReadLine());
+                Console.Write("y = ");
+                double y = double.Parse(Console.ReadLine());
+                double distance = Math.Sqrt(x * x + y * y);
+                if (distance <= 2 * R)
+                {
+                    intersectingCount++;
+                }
+            }
+            Console.WriteLine($"\nКоличество окружностей, пересекающих основную окружность: {intersectingCount}");
+        }
+    }
+    
+}
