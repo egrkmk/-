@@ -1,0 +1,159 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Text.RegularExpressions;
+using System.Threading.Tasks;
+
+namespace Лаба_4
+{
+    internal class Program
+    {
+        //Первое задание
+        //static int f1(List<int> collection)
+        //{
+        //    if (collection == null || collection.Count == 0)
+        //    {
+        //        throw new ArgumentException("Коллекция пуста");
+        //    }
+        //    int length = collection.Count;
+        //    int maxValue = collection.Max();
+        //    int minValue = collection.Min();
+        //    Console.WriteLine($"Длина коллекции: {length}");
+        //    Console.WriteLine($"Максимальный элемент: {maxValue}");
+        //    Console.WriteLine($"Минимальный элемент: {minValue}");
+        //    int product = f2(minValue, maxValue);
+        //    return product;
+        //}
+
+        //static int f2(int a, int b)
+        //{
+        //    return a * b;
+        //}
+        //static void Main()
+        //{
+        //    List<int> numbers = new List<int> { };
+        //    Console.Write("Введите количество значений коллецкции:");
+        //    int N = Convert.ToInt32(Console.ReadLine());
+        //    Console.WriteLine("Введите знаечния коллекции:");
+        //    for (int i = 0; i < N; i++)
+        //    {
+        //        numbers.Add(Convert.ToInt32(Console.ReadLine()));
+        //    }
+        //    int result = f1(numbers);
+        //    Console.WriteLine($"Произведение минимального и максимального значений: {result}");
+        //}
+
+
+        //Второе задание
+        //    static Dictionary<string, int> accounts = new Dictionary<string, int>
+        //{
+        //    { "Маша", 10000 },
+        //    { "Петя", 30000 },
+        //    { "Вася", 100000 }
+        //};
+
+        //    static double FindProfit(int balance)
+        //    {
+        //        double percent = 0.17;
+        //        int years = 3;
+        //        return balance * Math.Pow(1 + percent, years) - balance;
+        //    }
+
+        //    static void Main()
+        //    {
+        //        Console.Write("Введите имя: ");
+        //        string name = Console.ReadLine();
+
+        //        Console.Write("Введите сумму для пополнения счета: ");
+        //        int amount = int.Parse(Console.ReadLine());
+
+        //        if (accounts.ContainsKey(name))
+        //        {
+        //            accounts[name] += amount;
+        //            Console.WriteLine($"{name}, Ваш баланс счета изменен! Текущий баланс {accounts[name]} рублей.");
+        //        }
+        //        else
+        //        {
+        //            accounts.Add(name, amount);
+        //            Console.WriteLine($"Благодарим, что вы стали клиентом нашего банка! {name}, Ваш баланс счета изменен! Текущий баланс {amount} рублей.");
+        //        }
+
+        //        double profit = FindProfit(accounts[name]);
+        //        Console.WriteLine($"Вы можете воспользоваться стандартным вкладом нашего банка! Вложив сумму остатка {accounts[name]} на 3 года под 17% годовых, Вы получите прибыль {profit:F2}. Для активации вклада войдите в мобильное приложение!");
+        //    }
+
+        //Третьее задание
+        //static string FindLongestWord(string sentence)
+        //{
+        //    string[] words = sentence.Split(' ');
+        //    string longestWord = "";
+        //    int maxLength = 0;
+
+        //    foreach (string word in words)
+        //    {
+        //        if (word.Length > maxLength)
+        //        {
+        //            longestWord = word;
+        //            maxLength = word.Length;
+        //        }
+        //    }
+
+        //    return longestWord;
+        //}
+
+        //static void Main()
+        //{
+        //    string sentence = "Отпустите пораньше пожалуйста";
+
+        //    string longestWord = FindLongestWord(sentence);
+        //    Console.WriteLine($"Самое длинное слово: {longestWord}");
+        //}
+
+
+        //static bool ValidatePassword(string password)
+        //{
+        //    if (password.Length < 6 || password.Length > 12)
+        //    {
+        //        return false;
+        //    }
+
+        //    if (!Regex.IsMatch(password, "[a-z]"))
+        //    {
+        //        return false;
+        //    }
+
+        //    if (!Regex.IsMatch(password, "[A-Z]"))
+        //    {
+        //        return false;
+        //    }
+
+        //    if (!Regex.IsMatch(password, "[0-9]"))
+        //    {
+        //        return false;
+        //    }
+
+        //    if (!Regex.IsMatch(password, "[^a-zA-Z0-9]")) //^-любой символ не в данном диапазоне
+        //    {
+        //        return false;
+        //    }
+
+        //    return true;
+        //}
+
+        //static void Main()
+        //{
+        //    Console.Write("Введите пароль для проверки: ");
+        //    string password = Console.ReadLine();
+        //    bool isValid = ValidatePassword(password);
+        //    if (isValid)
+        //    {
+        //        Console.WriteLine("Пароль корректен.");
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine("Пароль не соответствует требованиям.");
+        //    }
+        //}
+        }
+}
